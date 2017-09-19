@@ -1,0 +1,420 @@
+﻿.logo{
+	margin-top:200px;
+	
+}
+
+@keyframes fadeout{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+.nav{
+	width:100%;	
+	top:0%;
+	height:70px;
+	background:white;
+	border-bottom: 1px solid gray;	
+}
+
+.nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative; 
+}
+.nav li {
+	margin-top:20px;
+	float:left;
+}
+.nav a{
+	margin-bottom:20px;
+	width:100px;
+	display:block;
+	text-decoration:none;
+	text-align: center;
+	color:black;
+}
+.nav ul li a:hover{
+	color: silver;
+	text-decoration:underline;
+	transition:0.15s ease-out;
+}
+
+
+.nav ul li:hover{
+	color:silver;
+	transition:0.15s ease-out;
+}
+
+.nav ul li:hover ul{
+	display: block;
+	background:white;
+	border:1px grey solid;
+	border-top:1px white;
+}
+
+
+
+.nav ul ul{
+	display:none;
+	position:absolute;
+}
+
+.productgallery{
+	margin:0px auto;
+	list-style:none;
+	width:1000px;	
+}
+
+.productgallery li{
+	float:left;
+	width: 270px;
+	margin-right:50px;
+	
+}
+
+.productgallery li img{
+	width: 280px;
+	height:250px;
+	float:left ;	
+}
+
+
+
+.productgallery li:hover .productdescription{opacity:0.9;}
+
+.productdescription {background :rgba(0,0,0,0.6); position:absolute; width:280px;height:250px; opacity:0;  transition:0.10s ease-in}
+
+.productdescription p{text-align:center; padding:50px; color:white; font-size:16px;}
+
+.productinfomation {height:90px; width: 100%; float:left;}
+
+.productinfomation h4{ color:white; width:100%; margin:10px}
+
+.productinfomation span{ color:white; margin:7px; font-size:16px;}
+
+
+.productpreview{
+	margin:0px auto;
+	list-style: none;
+	width:1000px;
+	height:1000px;
+	
+}
+.productpreview li{
+	float:left;
+	margin-top:50px;
+	height:500px;
+}
+
+.productpreview li img{
+	width: 440px;
+	height:400px;
+	float:left ;
+	margin-left:100px;	
+}
+
+
+.productp_description{
+	float:left;
+	margin-left:50px;
+}
+.productp_description h1{
+	margin-top:5px;
+}
+
+.btn{
+	margin-left:25px;
+	margin-top:60px;
+	margin-bottom: 10px;
+	display:block;
+	background-color:gray;
+	padding:10px 60px;
+	font-size: large;
+	float:left;
+	cursor:pointer;
+	
+}
+
+.btn:hover{
+	background: silver;
+	transition:0.15s ease-out;
+}
+
+.wishlist{
+	margin-bottom:10px;
+	margin-left:100px;
+	list-style:none;
+	color:gray;
+	float:left;
+	cursor:pointer;
+	text-decoration:none;
+
+}
+
+.size{
+   list-style:none; 
+   
+}
+.size button{
+   float:left;
+   display:block;
+   margin-top:30px;
+   margin-left:15px;
+   background-color:white;
+   color:black;
+   border: 1px solid black;
+   cursor:pointer;
+}
+.size button:focus{
+	background:black;
+	color:white;
+	outline:none;
+}
+.size button:hover{
+	background:black;
+	color:white;
+}
+
+
+
+.slideshow{
+	display:block;
+	margin:0 auto;
+}
+
+.button{
+  cursor: pointer;
+  position:absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border:0px;
+  background-color: rgba(0,0,0,0.2);
+}	
+
+.button:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.sdescription{
+	float:left;
+	margin-left:100px;
+	margin-top:50px;	
+}
+
+.socialmedia{
+	list-style:none;
+	float:right;
+	margin-right:150px;
+	}
+
+.socialmedia li{
+	margin:0px;	
+}
+.socialmedia li a{
+	font-size:35px;
+	margin:0px 15px;
+	display:block;
+	position:relative;
+}
+
+.socialmedia li a .fa{
+	color:black;
+	transition: .5s;
+}
+
+.socialmedia li a:hover .fa-facebook{
+	color:#3b5999;
+	transition:0.10s ease-in
+}
+
+.socialmedia li a:hover .fa-twitter{
+	color:#55acee;
+	transition:0.10s ease-in
+}
+.socialmedia li a:hover .fa-instagram{
+	color:#e4405f;
+	transition:0.10s ease-in
+}
+
+
+
+.footer{
+	height:290px;
+	padding:50px;
+	background:black;
+}
+
+.footer ul li{
+	list-style:none;
+	color:white;
+	text-align:left;
+	
+}
+
+.footer ul li a{
+	text-decoration: none;
+	color:white;
+}
+.footerright{
+	float: right;
+	margin-right:130px;
+}
+.footer ul li a:hover{
+	color:gray;
+	transition:0.10s ease-in
+}
+.footersocial{
+	float:right;
+}
+
+.footersocial li a{
+	float: left;
+	margin-right:25px;
+	font-size:35px;
+	}
+
+.footersocial li a:hover .fa-facebook{
+	color:#3b5999;
+	transition:0.10s ease-in
+}
+
+.footersocial li a:hover .fa-twitter{
+	color:#55acee;
+	transition:0.10s ease-in
+}
+.footersocial li a:hover .fa-instagram{
+	color:#e4405f;
+	transition:0.10s ease-in
+}
+
+
+
+.map{
+	margin:0px auto;
+	list-style:none;
+}
+
+.map li{
+	width: 270px;
+	margin-right:50px;
+	padding: 20px;
+	
+}
+
+.mapinfo span{
+	margin-left: 10px; 
+	display:inline-block;
+	width:75%; 
+	color:#69615F; 
+	font-family:Palatino Linotype;
+	cursor: pointer;
+}
+
+.googlemap{
+	position: relative;
+	float: right;
+	
+}
+
+
+
+
+
+.bottom a{
+	text-decoration:none;
+	color:white;
+	cursor:pointer;
+}
+
+.bottom a:hover{
+	color:gray;
+	transition:0.10s ease-in
+}
+
+.browsenow {
+	display:block;
+	background: black;
+	padding:10px;
+	width:130px;
+}
+	
+.browsenow a {
+	text-decoration:none;
+	color: white;
+}	
+
+.browsenow:hover{
+	background:gray;
+	transition:0.10s ease-in
+}
+
+.checkout{
+	float:left;
+	margin-left:15px;
+	display: block;
+	background:black;
+	padding: 15px;
+	width:200px;
+	text-decoration:none;
+	color: white;
+
+}	
+.checkout:hover{
+	background:gray;
+	transition:0.10s ease-in
+}
+
+.lsbtn:hover{
+	color: silver;
+	background-color:black;
+}
+
+.element li{
+	cursor:pointer;
+	display:block;
+	padding:15px 15px;
+	border:1px solid black;
+}
+.element2 li{
+	list-style:none;
+}
